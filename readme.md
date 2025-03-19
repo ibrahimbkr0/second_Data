@@ -1,103 +1,103 @@
 # README.md
 
-## 📌 Görev #2: README.md Dosyasını Oluşturma
+## 📌 Task #2: Creating the Readme.md File
 
-Bu belge, kullanılan Git komutları, yerel Git iş akışı ile GitHub iş akışı arasındaki farklar, süreç boyunca karşılaşılan zorluklar, commit yapma kararları ve yapay zekanın süreçteki rolüne dair bilgileri içermektedir.
+This document details the Git commands I used, the differences between a local Git workflow and a GitHub workflow, the challenges I encountered, my decision-making process for commits, and how AI assisted me throughout the process.
 
 ---
 
-## 🛠 Kullanılan Git Komutları
+## 🛠 Git Commands I Used
 
 ```bash
-# Yeni bir Git deposu başlat
+# Initialize a new Git repository
 git init
 
-# Var olan bir GitHub deposunu klonla
+# Clone an existing repository from GitHub
 git clone <repo_url>
 
-# Değişiklikleri sahneye al
-git add <dosya>
+# Stage changes for commit
+git add <file>
 
-# Sahneye alınan değişiklikleri commit et
-git commit -m "mesaj"
+# Commit staged changes with a message
+git commit -m "message"
 
-# Commit edilen değişiklikleri uzak depoya gönder
+# Push committed changes to the remote repository
 git push origin main
 
-# Uzak depodaki en son değişiklikleri çek
+# Pull the latest changes from the remote repository
 git pull origin main
 
-# Yeni bir dal (branch) oluştur
-git branch <dal_adi>
+# Create a new branch
+git branch <branch_name>
 
-# Belirtilen dala geç
-git checkout <dal_adi>
+# Switch to a specific branch
+git checkout <branch_name>
 
-# Bir dalı mevcut dala birleştir
-git merge <dal_adi>
+# Merge a branch into the current branch
+git merge <branch_name>
 ```
 
 ---
 
-## 🔄 Yerel Git İş Akışı vs. GitHub İş Akışı
+## 🔄 Local Git Workflow vs. GitHub Workflow
 
-### 🏠 Yerel Git İş Akışı:
-- Kod değişiklikleri yerelde yapılır.
-- `git add` komutu ile değişiklikler sahneye alınır.
-- `git commit` ile değişiklikler kaydedilir.
-- Depo, uzak bir depoya gönderilene kadar yerel olarak kalır.
+### 🏠 My Local Git Workflow:
+- I made code changes locally.
+- I staged changes using `git add`.
+- I committed changes using `git commit`.
+- My repository remained local until I pushed it to a remote repository.
 
-### ☁️ GitHub İş Akışı:
-- Değişiklikler `git push` ile GitHub’a gönderilir.
-- İşbirliği, pull request'ler ve kod incelemeleri ile gerçekleşir.
-- Birleştirmeler (merge) GitHub arayüzü veya `git merge` ile yapılır.
-- Uzak depodaki güncellemeler `git pull` komutu ile alınır.
-
----
-
-## ⚠️ Karşılaşılan Zorluklar
-- Yerel ve uzak depolar arasındaki farkları anlamak.
-- Farklı dallarla çalışırken merge (birleştirme) çakışmalarını çözmek.
-- Git komutlarının doğru sırasını hatırlamak.
-- Sahneye alınmış ve alınmamış değişiklikleri yönetmek.
+### ☁️ My GitHub Workflow:
+- I pushed my changes to GitHub using `git push`.
+- I collaborated with others through pull requests and code reviews.
+- I merged branches via the GitHub UI or `git merge`.
+- I pulled updates from the remote repository using `git pull`.
 
 ---
 
-## ✅ Commit Yapma Kararları
-Commit işlemlerini şu önemli noktalarda gerçekleştirdim:
-- Yeni bir özellik ekledikten veya bir hatayı düzelttikten sonra.
-- Uzak depodan değişiklikleri çekmeden önce.
-- Merge çakışmalarını çözdükten sonra stabil bir duruma ulaştığımda.
-- Dal değiştirmeden önce veri kaybını önlemek için.
+## ⚠️ Challenges I Encountered
+- Understanding the difference between local and remote repositories.
+- Resolving merge conflicts when working with multiple branches.
+- Remembering the correct order of Git commands to avoid errors.
+- Managing staged and unstaged changes efficiently.
 
 ---
 
-## 🤖 Yapay Zeka Kullanımı
-
-### 🔍 Yapay Zeka Nasıl Yardımcı Oldu?
-Yapay zekadan şu konularda destek aldım:
-- Yerel ve uzak iş akışları arasındaki farkları anlamak.
-- Merge çakışmaları ve hata mesajlarını çözmek.
-- En iyi commit mesajı uygulamalarını öğrenmek.
-
-### 📌 Kullanılan Platform:
-**ChatGPT** kullanarak Git komutları, iş akışları ve hata giderme süreçleri hakkında sorular sordum.
-
-### 📚 Öğrendiklerim:
-- İşbirliği için etkili bir Git iş akışı nasıl yönetilir.
-- Açıklayıcı commit mesajlarının önemi.
-- Çakışmaları nasıl verimli bir şekilde çözeceğim.
+## ✅ When I Decided to Make a Commit
+I made commits at key moments, including:
+- After adding a significant feature or fixing a bug.
+- Before pulling changes from the remote repository.
+- After resolving merge conflicts to maintain a stable state.
+- Before switching branches to prevent losing progress.
 
 ---
 
-## 📖 Ek Kaynaklar
-- [Git Dokümantasyonu](https://git-scm.com/doc)
-- [GitHub Dokümanları](https://docs.github.com/)
+## 🤖 How AI Helped Me
+
+### 🔍 My Experience with AI:
+I used AI assistance to:
+- Understand the differences between local and remote workflows.
+- Troubleshoot merge conflicts and error messages.
+- Learn best practices for writing commit messages.
+
+### 📌 Platform I Used:
+I used **ChatGPT** to ask questions about Git commands, workflows, and common troubleshooting issues.
+
+### 📚 What I Learned:
+- How to efficiently manage a Git workflow for collaboration.
+- The importance of writing clear and meaningful commit messages.
+- How to resolve conflicts effectively.
 
 ---
 
-## 📷 Git İş Akışı Örneği
+## 📖 Additional Resources
+- [Git Documentation](https://git-scm.com/doc)
+- [GitHub Docs](https://docs.github.com/)
 
-![Git İş Akışı](image.png)  
-*Şekil: Örnek Git İş Akışı*
+---
+
+## 📷 Example Git Workflow
+
+![Git Workflow](image.png)  
+*Figure: Example Git Workflow*
 
